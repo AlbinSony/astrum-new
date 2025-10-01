@@ -78,7 +78,7 @@ export default function Events() {
         <FadeIn>
           <div className="max-w-2xl">
             <h2 className="font-display text-3xl font-medium tracking-tight text-neutral-950 sm:text-4xl">
-              Don't Miss Out
+              Don&apos;t Miss Out
             </h2>
             <p className="mt-4 text-lg text-neutral-600">
               Mark your calendar for these exciting events

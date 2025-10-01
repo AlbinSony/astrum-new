@@ -169,7 +169,7 @@ const BlogPage = () => {
                   TRENDING NOW
                 </h2>
                 <p className="mt-6 text-lg text-neutral-300">
-                  What's Going to be Hot in 2025?
+                  What&apos;s Going to be Hot in 2025?
                 </p>
                 <p className="mt-2 text-neutral-400">
                   Stay ahead of the curve with these emerging trends

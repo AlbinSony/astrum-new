@@ -25,7 +25,7 @@ const ContactSection = () => {
               Ready to Begin Your Journey?
             </h3>
             <p className="text-neutral-300 mb-8">
-              Don't wait for tomorrow. Your global future starts with a single conversation today.
+              Don&apos;t wait for tomorrow. Your global future starts with a single conversation today.
             </p>
             <Button href={"/contact"} invert>
               Request Callback

@@ -46,7 +46,7 @@ const SuccessStories = () => {
             <div className="rounded-3xl bg-neutral-50 p-8">
               <FaQuoteLeft className="h-6 w-6 text-neutral-300 mb-6" />
               <blockquote className="text-lg text-neutral-950 mb-8">
-                "{testimonial.quote}"
+                &ldquo;{testimonial.quote}&rdquo;
               </blockquote>
               <div className="flex items-center gap-4">
                 <div className="h-12 w-12 rounded-full bg-neutral-200 flex items-center justify-center">

@@ -17,7 +17,7 @@ export default function Home() {
             Your Global Future Begins Here
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            We guide ambitious Indian students to top global universities with mentorship, funding & visa success.
+            We guide ambitious Indian students to top global universities with mentorship, funding &amp; visa success.
           </p>
           <div className="mt-10">
             <Button href="/contact" className="inline-flex rounded-full bg-neutral-950 px-8 py-3 text-sm font-semibold text-white transition hover:bg-neutral-800">
@@ -57,7 +57,7 @@ export default function Home() {
                   </span>
                 </div>
                 <h3 className="font-display text-xl font-medium">
-                  Introducing India's Most Transparent Scholarship Platform
+                  Introducing India&apos;s Most Transparent Scholarship Platform
                 </h3>
                 <p className="mt-2 text-neutral-300">Apply. Compare. Get Funded.</p>
                 <div className="mt-6">

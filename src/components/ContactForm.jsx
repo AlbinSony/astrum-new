@@ -12,7 +12,7 @@ const ContactForm = () => {
           Send us a Message
         </h2>
         <p className="mt-2 text-sm text-neutral-600">
-          Fill out the form below and we'll get back to you within 24 hours
+          Fill out the form below and we&apos;ll get back to you within 24 hours
         </p>
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
           <TextInput label="First Name" name="firstName" autoComplete="given-name" placeholder="Enter your first name" />
