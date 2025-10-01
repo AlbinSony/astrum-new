@@ -77,10 +77,10 @@ export default function Events() {
       <Container className="mt-16">
         <FadeIn>
           <div className="max-w-2xl">
-            <h2 className="font-display text-3xl font-medium tracking-tight text-neutral-950 sm:text-4xl">
+            <h2 className="font-display text-2xl font-medium tracking-tight text-neutral-950 sm:text-3xl lg:text-4xl">
               Don&apos;t Miss Out
             </h2>
-            <p className="mt-4 text-lg text-neutral-600">
+            <p className="mt-4 text-base sm:text-lg text-neutral-600">
               Mark your calendar for these exciting events
             </p>
           </div>
@@ -89,44 +89,44 @@ export default function Events() {
         <div className="mt-10 space-y-8">
           {upcomingEvents.map((event, index) => (
             <FadeIn key={event.title}>
-              <div className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5 hover:shadow-xl transition-shadow">
-                <div className="flex items-start justify-between">
+              <div className="rounded-2xl bg-white p-4 sm:p-6 shadow-lg ring-1 ring-gray-900/5 hover:shadow-xl transition-shadow">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
                   <div className="flex items-start gap-4 flex-1">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-neutral-950 text-white">
-                      <event.icon className="h-6 w-6" />
+                    <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-xl bg-neutral-950 text-white flex-shrink-0">
+                      <event.icon className="h-5 w-5 sm:h-6 sm:w-6" />
                     </div>
-                    <div className="flex-1">
-                      <div className="flex items-center gap-3 mb-2">
-                        <h3 className="text-xl font-semibold text-neutral-950">
+                    <div className="flex-1 min-w-0">
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 mb-2">
+                        <h3 className="text-lg sm:text-xl font-semibold text-neutral-950">
                           {event.title}
                         </h3>
-                        <span className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-medium border ${event.color}`}>
+                        <span className={`inline-flex items-center rounded-full px-2 py-1 text-xs font-medium border ${event.color} self-start`}>
                           {event.type}
                         </span>
                       </div>
-                      <p className="text-neutral-600 mb-4">
+                      <p className="text-sm sm:text-base text-neutral-600 mb-4">
                         {event.description}
                       </p>
                       
                       <div className="space-y-2">
-                        <div className="flex items-center text-sm text-neutral-700">
-                          <FaCalendarAlt className="mr-2 h-4 w-4 text-neutral-400" />
-                          <span>{event.date}</span>
+                        <div className="flex items-center text-xs sm:text-sm text-neutral-700">
+                          <FaCalendarAlt className="mr-2 h-3 w-3 sm:h-4 sm:w-4 text-neutral-400 flex-shrink-0" />
+                          <span className="truncate">{event.date}</span>
                         </div>
                         
-                        <div className="flex items-center text-sm text-neutral-700">
-                          <FaClock className="mr-2 h-4 w-4 text-neutral-400" />
-                          <span>{event.time}</span>
+                        <div className="flex items-center text-xs sm:text-sm text-neutral-700">
+                          <FaClock className="mr-2 h-3 w-3 sm:h-4 sm:w-4 text-neutral-400 flex-shrink-0" />
+                          <span className="truncate">{event.time}</span>
                         </div>
                         
-                        <div className="flex items-center text-sm text-neutral-700">
-                          <FaMapMarkerAlt className="mr-2 h-4 w-4 text-neutral-400" />
-                          <span>{event.location}</span>
+                        <div className="flex items-center text-xs sm:text-sm text-neutral-700">
+                          <FaMapMarkerAlt className="mr-2 h-3 w-3 sm:h-4 sm:w-4 text-neutral-400 flex-shrink-0" />
+                          <span className="truncate">{event.location}</span>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <button className="ml-6 bg-neutral-950 text-white px-6 py-2 rounded-lg hover:bg-neutral-800 transition-colors">
+                  <button className="w-full sm:w-auto sm:ml-6 bg-neutral-950 text-white px-4 sm:px-6 py-2 rounded-lg hover:bg-neutral-800 transition-colors text-sm sm:text-base font-medium">
                     Register Now
                   </button>
                 </div>

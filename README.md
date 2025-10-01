@@ -1,24 +1,24 @@
-# Abdullah Agency - Next.js, Tailwind CSS & Framer Motion
+# Astrum - Next.js, Tailwind CSS & Framer Motion
 
-![Abdullah Agency](/public/agency.PNG)
+![Astrum Logo](https://via.placeholder.com/400x200/000000/FFFFFF?text=ASTRUM)
 
-Abdullah Agency is a stunning multi-page agency website template developed using Next.js, Tailwind CSS, and Framer Motion. Designed and built by the talented Tailwind CSS team, this template offers a sleek and minimalist appearance while boasting engaging interactive elements and captivating animations powered by Framer Motion.
+Astrum is a stunning study abroad consultancy website developed using Next.js, Tailwind CSS, and Framer Motion. This modern website offers a sleek and professional appearance while providing comprehensive guidance for students seeking global education opportunities.
 
 ## Features
 
-- Beautifully designed agency website template.
+- Beautifully designed study abroad consultancy website.
 - Built using Tailwind CSS and Next.js for a seamless development experience.
 - Enhanced with delightful animations and transitions through Framer Motion.
 - Easy-to-update case studies and blog posts with MDX.
-- Production-ready and highly customizable for your agency's specific needs.
+- Production-ready and highly customizable for your consultancy's specific needs.
 - A valuable resource for learning how to build websites with Tailwind CSS and React.
 
 ## Getting Started
 
-To run the Abdullah Agency website locally, follow these steps:
+To run the Astrum website locally, follow these steps:
 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/abdullah-agency.git
+   git clone https://github.com/AlbinSony/astrum-new.git
    ```

@@ -99,10 +99,10 @@ const BlogPage = () => {
       <Container className="mt-24">
         <FadeIn>
           <div className="max-w-2xl">
-            <h2 className="font-display text-3xl font-medium tracking-tight text-neutral-950 sm:text-4xl">
+            <h2 className="font-display text-2xl font-medium tracking-tight text-neutral-950 sm:text-3xl lg:text-4xl">
               Latest Articles
             </h2>
-            <p className="mt-4 text-lg text-neutral-600">
+            <p className="mt-4 text-base sm:text-lg text-neutral-600">
               Expert insights and practical guidance for your study abroad journey
             </p>
           </div>
@@ -111,44 +111,44 @@ const BlogPage = () => {
         <div className="mt-10 space-y-8">
           {articles.map((article, index) => (
             <FadeIn key={article.title}>
-              <article className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5 hover:shadow-xl transition-shadow">
-                <div className="flex gap-6">
-                  <div className="aspect-[4/3] w-48 rounded-xl bg-neutral-200 flex items-center justify-center flex-shrink-0">
+              <article className="rounded-2xl bg-white p-4 sm:p-6 shadow-lg ring-1 ring-gray-900/5 hover:shadow-xl transition-shadow">
+                <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="aspect-[16/9] sm:aspect-[4/3] w-full sm:w-48 rounded-xl bg-neutral-200 flex items-center justify-center flex-shrink-0">
                     <span className="text-neutral-500 text-sm">Image</span>
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-3">
-                      <span className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-medium ${article.categoryColor}`}>
+                      <span className={`inline-flex items-center rounded-full px-2 py-1 text-xs font-medium ${article.categoryColor}`}>
                         {article.category}
                       </span>
                     </div>
                     
-                    <h3 className="text-xl font-semibold text-neutral-950 mb-2">
+                    <h3 className="text-lg sm:text-xl font-semibold text-neutral-950 mb-2">
                       {article.title}
                     </h3>
                     
-                    <p className="text-neutral-600 mb-4 line-clamp-2">
+                    <p className="text-sm sm:text-base text-neutral-600 mb-4 line-clamp-2">
                       {article.excerpt}
                     </p>
                     
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center text-sm text-neutral-500 space-x-4">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                      <div className="flex flex-wrap items-center text-xs sm:text-sm text-neutral-500 gap-2 sm:gap-4">
                         <div className="flex items-center">
                           <FaUser className="mr-1 h-3 w-3" />
-                          <span>{article.author}</span>
+                          <span className="truncate">{article.author}</span>
                         </div>
                         <div className="flex items-center">
                           <FaCalendarAlt className="mr-1 h-3 w-3" />
-                          <span>{article.date}</span>
+                          <span className="truncate">{article.date}</span>
                         </div>
                         <div className="flex items-center">
                           <FaClock className="mr-1 h-3 w-3" />
                           <span>{article.readTime}</span>
                         </div>
                       </div>
-                      <button className="flex items-center text-neutral-950 font-medium hover:text-neutral-700 transition-colors">
+                      <button className="flex items-center text-sm sm:text-base text-neutral-950 font-medium hover:text-neutral-700 transition-colors self-start sm:self-auto">
                         Read More
-                        <FaArrowRight className="ml-2 h-4 w-4" />
+                        <FaArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4" />
                       </button>
                     </div>
                   </div>
