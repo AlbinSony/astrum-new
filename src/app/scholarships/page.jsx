@@ -112,7 +112,7 @@ export default function Scholarships() {
                   </div>
                 </div>
                 
-                <button className="w-full bg-neutral-950 text-white py-3 px-6 rounded-lg hover:bg-neutral-800 transition-colors">
+                <button className="w-full bg-astrum text-white py-3 px-6 rounded-lg hover:bg-astrum-dark transition-colors">
                   Search
                 </button>
               </div>
@@ -142,14 +142,14 @@ export default function Scholarships() {
                   <span className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-medium border ${scholarship.color}`}>
                     {scholarship.type}
                   </span>
-                  <span className="text-2xl font-bold text-neutral-950">{scholarship.amount}</span>
+                  <span className="text-2xl font-bold text-primary-900">{scholarship.amount}</span>
                 </div>
                 
-                <h3 className="mt-4 text-xl font-semibold text-neutral-950">
+                <h3 className="mt-4 text-xl font-semibold text-primary-900">
                   {scholarship.title}
                 </h3>
                 
-                <p className="mt-2 text-neutral-600">
+                <p className="mt-2 text-primary-700">
                   {scholarship.university} • {scholarship.country}
                 </p>
                 
@@ -167,7 +167,7 @@ export default function Scholarships() {
                   </div>
                 </div>
                 
-                <button className="mt-6 w-full bg-neutral-950 text-white py-2 px-4 rounded-lg hover:bg-neutral-800 transition-colors">
+                <button className="mt-6 w-full bg-astrum text-white py-2 px-4 rounded-lg hover:bg-astrum-dark transition-colors">
                   View Details
                 </button>
               </div>
@@ -179,7 +179,7 @@ export default function Scholarships() {
       {/* Launch Portal CTA */}
       <Container className="mt-24">
         <FadeIn>
-          <div className="rounded-3xl bg-neutral-950 px-6 py-20 text-center">
+          <div className="rounded-3xl bg-astrum-gradient px-6 py-20 text-center">
             <h2 className="font-display text-3xl font-medium text-white sm:text-4xl">
               Launch Full Portal
             </h2>
@@ -187,7 +187,7 @@ export default function Scholarships() {
               Access thousands more scholarships in our comprehensive database
             </p>
             <div className="mt-8">
-              <button className="inline-flex rounded-full bg-white px-8 py-3 text-sm font-semibold text-neutral-950 transition hover:bg-neutral-200">
+              <button className="inline-flex rounded-full bg-white px-8 py-3 text-sm font-semibold text-primary-900 transition hover:bg-green-50">
                 Explore All Scholarships
               </button>
             </div>
@@ -212,12 +212,12 @@ export default function Scholarships() {
           {stats.map((stat, index) => (
             <FadeIn key={stat.label}>
               <div className="text-center">
-                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-neutral-950">
+                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-astrum">
                   <stat.icon className="h-8 w-8 text-white" />
                 </div>
                 <div className="mt-4">
-                  <div className="text-3xl font-bold text-neutral-950">{stat.value}</div>
-                  <div className="text-sm text-neutral-600">{stat.label}</div>
+                  <div className="text-3xl font-bold text-primary-900">{stat.value}</div>
+                  <div className="text-sm text-primary-700">{stat.label}</div>
                 </div>
               </div>
             </FadeIn>
@@ -239,7 +239,7 @@ export default function Scholarships() {
               <div className="mt-8">
                 <a
                   href="/contact"
-                  className="inline-flex rounded-full bg-neutral-950 px-8 py-3 text-sm font-semibold text-white transition hover:bg-neutral-800"
+                  className="inline-flex rounded-full bg-astrum px-8 py-3 text-sm font-semibold text-white transition hover:bg-astrum-dark"
                 >
                   Book Free Mentorship
                 </a>

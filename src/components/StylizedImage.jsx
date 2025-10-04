@@ -26,7 +26,7 @@ const StylizedImage = ({ shape = 0, className, ...props }) => {
     <div
       className={clsx(
         className,
-        "relative flex aspect-[719/680] w-full grayscale"
+        "relative flex aspect-[719/680] w-full"
       )}
     >
       <svg viewBox={`0 0 ${width} ${height}`} fill="none" className="h-full">
@@ -35,7 +35,7 @@ const StylizedImage = ({ shape = 0, className, ...props }) => {
             <foreignObject width={width} height={height}>
               <Image
                 alt=""
-                className="w-full bg-neutral-100 object-cover"
+                className="w-full bg-green-50 object-cover"
                 style={{ aspectRatio: `${width} / ${height}` }}
                 {...props}
               />
@@ -44,7 +44,7 @@ const StylizedImage = ({ shape = 0, className, ...props }) => {
           <use
             href={`#${id}-shape`}
             strokeWidth="2"
-            className="stroke-neutral-950/10"
+            className="stroke-primary-400/30"
           />
         </g>
         <defs>

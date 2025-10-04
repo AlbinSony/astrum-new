@@ -85,7 +85,7 @@ const BlogPage = () => {
           {categories.map((category, index) => (
             <FadeIn key={category.name}>
               <div className="text-center p-6 rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5">
-                <div className="text-3xl font-bold text-neutral-950">{category.count}</div>
+                <div className="text-3xl font-bold text-primary-900">{category.count}</div>
                 <div className={`mt-2 inline-flex rounded-full px-3 py-1 text-xs font-medium ${category.color}`}>
                   {category.name}
                 </div>
@@ -99,10 +99,10 @@ const BlogPage = () => {
       <Container className="mt-24">
         <FadeIn>
           <div className="max-w-2xl">
-            <h2 className="font-display text-2xl font-medium tracking-tight text-neutral-950 sm:text-3xl lg:text-4xl">
+            <h2 className="font-display text-2xl font-medium tracking-tight text-primary-900 sm:text-3xl lg:text-4xl">
               Latest Articles
             </h2>
-            <p className="mt-4 text-base sm:text-lg text-neutral-600">
+            <p className="mt-4 text-base sm:text-lg text-primary-700">
               Expert insights and practical guidance for your study abroad journey
             </p>
           </div>
@@ -123,11 +123,11 @@ const BlogPage = () => {
                       </span>
                     </div>
                     
-                    <h3 className="text-lg sm:text-xl font-semibold text-neutral-950 mb-2">
+                    <h3 className="text-lg sm:text-xl font-semibold text-primary-900 mb-2">
                       {article.title}
                     </h3>
                     
-                    <p className="text-sm sm:text-base text-neutral-600 mb-4 line-clamp-2">
+                    <p className="text-sm sm:text-base text-primary-700 mb-4 line-clamp-2">
                       {article.excerpt}
                     </p>
                     
@@ -146,7 +146,7 @@ const BlogPage = () => {
                           <span>{article.readTime}</span>
                         </div>
                       </div>
-                      <button className="flex items-center text-sm sm:text-base text-neutral-950 font-medium hover:text-neutral-700 transition-colors self-start sm:self-auto">
+                      <button className="flex items-center text-sm sm:text-base text-primary-900 font-medium hover:text-primary-700 transition-colors self-start sm:self-auto">
                         Read More
                         <FaArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4" />
                       </button>
@@ -162,7 +162,7 @@ const BlogPage = () => {
       {/* Trending Section */}
       <Container className="mt-24">
         <FadeIn>
-          <div className="rounded-3xl bg-neutral-950 px-6 py-20 sm:px-6 sm:py-32 md:px-12">
+          <div className="rounded-3xl bg-astrum-gradient px-6 py-20 sm:px-6 sm:py-32 md:px-12">
             <div className="mx-auto max-w-4xl">
               <div className="max-w-xl">
                 <h2 className="font-display text-3xl font-medium text-white [text-wrap:balance] sm:text-4xl">
@@ -194,13 +194,13 @@ const BlogPage = () => {
         <div className="grid gap-8 lg:grid-cols-2">
           <FadeIn>
             <div className="rounded-2xl bg-neutral-50 p-8">
-              <h3 className="font-display text-2xl font-medium text-neutral-950">
+              <h3 className="font-display text-2xl font-medium text-primary-900">
                 Want to Write for Us?
               </h3>
-              <p className="mt-4 text-neutral-600">
+              <p className="mt-4 text-primary-700">
                 Share your study abroad experience and help fellow students navigate their journey.
               </p>
-              <button className="mt-6 inline-flex rounded-full bg-neutral-950 px-6 py-3 text-sm font-semibold text-white transition hover:bg-neutral-800">
+              <button className="mt-6 inline-flex rounded-full bg-astrum px-6 py-3 text-sm font-semibold text-white transition hover:bg-astrum-dark">
                 Become a Contributor
               </button>
             </div>
@@ -208,10 +208,10 @@ const BlogPage = () => {
           
           <FadeIn>
             <div className="rounded-2xl bg-neutral-50 p-8">
-              <h3 className="font-display text-2xl font-medium text-neutral-950">
+              <h3 className="font-display text-2xl font-medium text-primary-900">
                 Never Miss an Update
               </h3>
-              <p className="mt-4 text-neutral-600">
+              <p className="mt-4 text-primary-700">
                 Subscribe to our newsletter for the latest scholarship alerts, visa updates, and study abroad insights.
               </p>
               <div className="mt-6 flex gap-3">
@@ -220,7 +220,7 @@ const BlogPage = () => {
                   placeholder="Enter your email"
                   className="flex-1 rounded-lg border border-neutral-300 px-4 py-2 focus:border-neutral-950 focus:outline-none"
                 />
-                <button className="rounded-lg bg-neutral-950 px-6 py-2 text-sm font-semibold text-white hover:bg-neutral-800 transition-colors">
+                <button className="rounded-lg bg-astrum px-6 py-2 text-sm font-semibold text-white hover:bg-astrum-dark transition-colors">
                   Subscribe
                 </button>
               </div>

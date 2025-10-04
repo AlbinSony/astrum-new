@@ -20,7 +20,7 @@ const SectionIntro = ({
               <span
                 className={clsx(
                   "mb-6 block font-display text-base font-semibold",
-                  invert ? "text-white" : "text-neutral-950"
+                  invert ? "text-white" : "text-primary-900"
                 )}
               >
                 {eyebrow}
@@ -34,7 +34,7 @@ const SectionIntro = ({
               smaller
                 ? "text-2xl font-semibold"
                 : "text-4xl font-medium sm:text-5xl",
-              invert ? "text-white" : "text-neutral-950"
+              invert ? "text-white" : "text-primary-900"
             )}
           >
             {title}
@@ -43,9 +43,11 @@ const SectionIntro = ({
         {children && (
           <div
             className={clsx(
-              "mt-6 text-xl",
-              invert ? "text-neutral-300" : "text-neutral-600"
-            )}
+            "mt-6 text-xl",
+            invert
+              ? "text-neutral-300"
+              : "text-primary-700"
+          )}
           >
             {children}
           </div>

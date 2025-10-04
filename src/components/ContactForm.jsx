@@ -8,7 +8,7 @@ const ContactForm = () => {
   return (
     <FadeIn>
             <form>
-        <h2 className="font-display text-base font-semibold text-neutral-950">
+        <h2 className="font-display text-base font-semibold text-primary-900">
           Send us a Message
         </h2>
         <p className="mt-2 text-sm text-neutral-600">

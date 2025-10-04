@@ -94,19 +94,19 @@ export default function Services() {
             <FadeIn key={service.title} className="group">
               <div className="rounded-3xl bg-neutral-50 p-8 hover:bg-neutral-100 transition-colors">
                 <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-neutral-950 text-white">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-astrum text-white">
                     <service.icon className="h-6 w-6" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-display text-xl font-semibold text-neutral-950">
+                    <h3 className="font-display text-xl font-semibold text-primary-900">
                       {service.title}
                     </h3>
-                    <p className="mt-2 text-neutral-600">
+                    <p className="mt-2 text-primary-700">
                       {service.description}
                     </p>
                     <ul className="mt-4 space-y-2">
                       {service.features.map((feature) => (
-                        <li key={feature} className="flex items-center text-sm text-neutral-700">
+                        <li key={feature} className="flex items-center text-sm text-primary-700">
                           <div className="mr-2 h-1.5 w-1.5 rounded-full bg-neutral-300" />
                           {feature}
                         </li>
@@ -122,7 +122,7 @@ export default function Services() {
 
       <Container className="mt-24 sm:mt-32 lg:mt-40">
         <FadeIn>
-          <div className="rounded-3xl bg-neutral-950 px-6 py-20 sm:px-6 sm:py-32 md:px-12">
+          <div className="rounded-3xl bg-astrum-gradient px-6 py-20 sm:px-6 sm:py-32 md:px-12">
             <div className="mx-auto max-w-4xl">
               <div className="max-w-xl">
                 <h2 className="font-display text-3xl font-medium text-white [text-wrap:balance] sm:text-4xl">
@@ -136,7 +136,7 @@ export default function Services() {
                 <div className="mt-8">
                   <a
                     href="/contact"
-                    className="inline-flex rounded-full bg-white px-4 py-1.5 text-sm font-semibold text-neutral-950 transition hover:bg-neutral-200"
+                    className="inline-flex rounded-full bg-white px-4 py-1.5 text-sm font-semibold text-primary-900 transition hover:bg-green-50"
                   >
                     Get Free Consultation
                   </a>

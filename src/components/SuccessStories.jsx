@@ -31,10 +31,10 @@ const SuccessStories = () => {
     <Container className="mt-24 sm:mt-32 lg:mt-40">
       <FadeIn>
         <div className="max-w-2xl">
-          <h2 className="font-display text-3xl font-medium tracking-tight text-neutral-950 sm:text-4xl">
+          <h2 className="font-display text-3xl font-medium tracking-tight text-primary-900 sm:text-4xl">
             Success Stories
           </h2>
-          <p className="mt-4 text-lg text-neutral-600">
+          <p className="mt-4 text-lg text-primary-700">
             Hear from students who achieved their dreams
           </p>
         </div>
@@ -45,7 +45,7 @@ const SuccessStories = () => {
           <FadeIn key={testimonial.name}>
             <div className="rounded-3xl bg-neutral-50 p-8">
               <FaQuoteLeft className="h-6 w-6 text-neutral-300 mb-6" />
-              <blockquote className="text-lg text-neutral-950 mb-8">
+              <blockquote className="text-lg text-primary-900 mb-8">
                 &ldquo;{testimonial.quote}&rdquo;
               </blockquote>
               <div className="flex items-center gap-4">
@@ -53,8 +53,8 @@ const SuccessStories = () => {
                   <FaUser className="h-6 w-6 text-neutral-400" />
                 </div>
                 <div>
-                  <div className="font-semibold text-neutral-950">{testimonial.name}</div>
-                  <div className="text-sm text-neutral-600">{testimonial.degree}</div>
+                  <div className="font-semibold text-primary-900">{testimonial.name}</div>
+                  <div className="text-sm text-primary-700">{testimonial.degree}</div>
                   <div className="text-sm text-neutral-500">{testimonial.country}</div>
                 </div>
               </div>
